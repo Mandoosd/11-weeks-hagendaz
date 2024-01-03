@@ -19,12 +19,12 @@ $(function () {
         slideActiveClass: 'on',
     });
 
-    let GH = $('.grid_wrap').height();
-    $('.grid_wrap').height(GH / 2);
+    // let GH = $('.grid_wrap').height();
+    // $('.grid_wrap').height(GH / 2);
 
-    $('.Tab_Menu .fade').on('click', function () {
-        $('.grid_wrap').height(GH);
-    })
+    // $('.Tab_Menu .fade').on('click', function () {
+    //     $('.grid_wrap').height(GH);
+    // })
 
 
 

@@ -9,14 +9,12 @@
 
 .header_wrap h1 {
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
-.header_wrap h1 img {
-    width: 180px;
-}
+
 
 .header_wrap .header_top .customer {}
 
@@ -24,8 +22,10 @@
     display: flex;
     padding: 52px 0;
     gap: 20px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 14px;
 }
+
 
 .header_wrap .header_top ul .xi-facebook {
     font-size: 20px;
@@ -43,16 +43,21 @@
     background: #600624;
 }
 
-.header_wrap .header_bottom .gnb {
+.header_wrap .header_bottom .inner {
     position: relative;
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    
     vertical-align: middle;
 }
 
+.header_wrap .header_bottom .gnb {
+
+    color: #fff;
+}
+
 .header_wrap .header_bottom .gnb>* {
-    padding: 12px 0;
+    padding: 12px 15px;
 }
 
 .header_wrap .header_bottom .gnb i {
@@ -74,6 +79,7 @@
     padding: 20px 0;
     font-size: 16px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .header_wrap .header_bottom .gnb form {
@@ -94,7 +100,7 @@
 
 .header_wrap .header_bottom .gnb span {
     position: absolute;
-    top: 16px;
+    top: 6px;
     right: 10px;
     font-size: 20px;
     color: #fff;
@@ -246,23 +252,22 @@
 .Tab_Menu {
     margin: 0 0 85px 0;
     text-align: center;
-    padding: 0 0 40px 0;
 }
 
 .Tab_Menu .tab_wrap {
     position: relative;
-    padding: 0;
 }
 
 .Tab_Menu button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
 
     padding: 4px;
     font-size: 20px;
     border: 2px solid #ddd;
     color: #ddd;
+    line-height: 0;
 }
 
 .tab_wrap {
@@ -288,16 +293,148 @@
 
 }
 
+.Tab_Menu .itm_grid .tab .flag strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 8px 0 0 0;
+}
+
+.Tab_Menu .itm_grid .tab01 .flag{
+    position: absolute;
+top: 0;
+right: 10px;
+
+
+    width: 60px;
+    height: 56px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    background: #5A0F24;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Tab_Menu .itm_grid .tab01 .flag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #F2C862;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+}
+
+.Tab_Menu .itm_grid .tab02 {
+    position: relative;
+
+}
+
+.Tab_Menu .itm_grid .tab02 .flag{
+    position: absolute;
+top: 0;
+right: 10px;
+
+
+    width: 60px;
+    height: 56px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    background: #5A0F24;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Tab_Menu .itm_grid .tab02 .flag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #F7E2AB;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+}
+.Tab_Menu .itm_grid .tab03 .flag{
+    position: absolute;
+top: 0;
+right: 10px;
+
+
+    width: 60px;
+    height: 56px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    background: #5A0F24;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Tab_Menu .itm_grid .tab03 .flag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #CD9876;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+}
+.Tab_Menu .itm_grid .tab04 .flag{
+    position: absolute;
+top: 0;
+right: 10px;
+
+
+    width: 60px;
+    height: 56px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    background: #5A0F24;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Tab_Menu .itm_grid .tab04 .flag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #DDA185;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+}
+
 .Tab_Menu .itm_grid .tab .txt_box {
     position: absolute;
     display: block;
     bottom: -10px;
     width: 100%;
-    height: 30%;
-    padding: 10px 20px;
+    height: 40%;
+    padding: 16px 20px;
     background: #fff;
     text-align: left;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
 
     transition: 0.5s;
     opacity: 0;
@@ -310,8 +447,8 @@
 
 .Tab_Menu .itm_grid .tab .txt_box strong {
     display: inline-block;
-    margin: 0 0 8px 0;
-    font-size: 0.729vw;
+    margin: 0 0 16px 0;
+    font-size: 0.833vw;
     font-weight: 500;
 }
 
@@ -322,10 +459,15 @@
 }
 
 .Tab_Menu .itm_grid .tab .txt_box .sell_box span {
-
-    font-size: 0.833vw;
+    font-size: 1.042vw; 
     font-weight: 600;
+    word-spacing: -4px;
 }
+
+.Tab_Menu .itm_grid .tab .txt_box .sell_box  i {
+    font-size: 1.250vw;
+}
+    
 
 .Tab_Menu .itm_grid01 {
     margin: 0 0 40px 0;
@@ -334,14 +476,74 @@
 
 .Tab_Menu .itm_grid02 {}
 
-.Brand {
+
+.movie {
+    margin: 0 0 200px 0;
+}
+
+.movie .movie_wrap {
+    background: #EFE6D5;
+    height: 440px;
     margin: 0 0 100px 0;
 }
 
-.Brand .inner {
+.movie .movie_wrap .inner {
+    position: relative;
+    
+    height: 540px;
+    display: flex;
+}
+
+.movie .movie_wrap .inner .txt_box {
+    position: absolute;
+    top:calc(50% + -150px);
+    padding: 40px 0 80px;
+    transform: translate(0 , 50%);
+    text-align: center;
+
+    border-top: 1px solid #000;
+}
+
+.movie .movie_wrap .inner .txt_box strong {
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+.movie .movie_wrap .inner .txt_box p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.movie .movie_wrap .inner iframe {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    box-shadow: 0px 19px 29px 0px rgba(0,0,0,0.27);
+background: transparent;
+}
+
+.Brand {
+    margin:0 0 100px 0;
+}
+
+.Brand .brand_wrap {
     position: relative;
     background: url(../images/banner.jpg)no-repeat center center/cover;
     height: 200px;
+    
+}
+
+.Brand .brand_wrap::after {
+    content: "";
+    position: absolute;
+    bottom: -57px;
+    left: 0;
+    width: 1170px;
+    height: 1px;
+
+    background: #f1f1f1;
+    z-index: 999;
 }
 
 .Brand .inner .txt {
@@ -352,12 +554,13 @@
     left: 50px;
     transform: translate(0, -50%);
     color: #000;
+    white-space: nowrap;
 
 }
 
 .Brand .inner .txt strong {
     display: block;
-    font-size: 40px;
+    font-size: 1.667vw;
     font-weight: 800;
     margin: 0 0 8px 0;
 }
@@ -366,11 +569,12 @@
     display: inline-block;
     border: 2px solid #000;
     padding: 2px;
-    font-size: 24px;
+    font-size: 1.250vw;
 }
 
 .insta {
     margin: 0 0 100px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -468,6 +672,7 @@
     font-weight: 500;
     margin: 0 0 4px 0;
     font-size: 14px;
+    color: #000;
 }
 
 .footer_wrap .footer_middle .txt_box01 strong {
